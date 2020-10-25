@@ -1,0 +1,7 @@
+FROM python:3.10.0a1-buster
+
+WORKDIR /app
+
+COPY /app .
+
+CMD ["python", "wordCounter.py"]
