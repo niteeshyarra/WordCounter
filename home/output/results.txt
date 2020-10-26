@@ -1,0 +1,5 @@
+Hostname: NiteeshIP Address: 192.168.0.6
+Total Words: 0
+Highest Words: 0
+File with highest words: 
+List of files: 

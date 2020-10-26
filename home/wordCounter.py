@@ -2,7 +2,7 @@ import os
 import socket
 
 directory = os.path.dirname(os.path.realpath(__file__))
-dataDirectory = directory+r"/home/data"
+dataDirectory = directory+"/data"
 totalWords = 0
 maxwords = 0
 fileWithMaxWords = ""
@@ -35,9 +35,13 @@ line6 = "List of files: "+listOfFiles
 
 
 
-outputDirectoryPath = os.path.join(directory+r"\home", 'output')
+outputDirectoryPath = os.path.join(directory, 'output')
 if not os.path.isdir(outputDirectoryPath):
     os.mkdir(outputDirectoryPath)
-outputfilePath = os.path.join(outputDirectoryPath, 'output.txt')
+outputfilePath = os.path.join(outputDirectoryPath, 'results.txt')
 f = open(outputfilePath, 'w')
 f.writelines([line1, line2+"\n", line3+"\n", line4+"\n", line5+"\n", line6])
+f.close()
+
+with open(outputfilePath, 'r') as fin:
+    print(fin.read())
