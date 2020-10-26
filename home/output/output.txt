@@ -1,5 +1,0 @@
-Hostname: 5QHSQ13IP Address: 192.168.0.11
-Total Words: 27
-Highest Words: 17
-File with highest words: file2.txt
-List of files: file1.txt file2.txt file3.txt 
